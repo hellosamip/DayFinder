@@ -21,7 +21,6 @@ int main(void) {
 	scanf("%d", &monthnumber);
 	printf("Input date: \n");
 	scanf("%d", &date);
-	
 	if (monthnumber > 0 && monthnumber < 13 && date > 0 && date < 33) {
 		getday(monthnumber, date);
 	}
