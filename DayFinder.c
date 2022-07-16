@@ -5,10 +5,10 @@ int getday(int monthnumber, int date) {
 	monthnumber = monthnumber - 1;
 	int daycode = (codenumbers[monthnumber]+ date) % 7;
 	if (daycode == 0) {
-		printf("2078 /%d /%d is Saturday!!\n", monthnumber, date);
+		printf("2078 /%d /%d is Saturday!!\n", monthnumber+1, date);
 	}
 	else {	
-		printf("2078 /%d /%d is %s!!\n", monthnumber, date, days[daycode-1]);
+		printf("2078 /%d /%d is %s!!\n", monthnumber+1, date, days[daycode-1]);
 	}
 	return 0;	
 }
@@ -28,5 +28,5 @@ int main(void) {
 	else {
 		printf("Can not proceed..\n");
 	}
-	return 0;
+	main();
 }
